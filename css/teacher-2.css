@@ -1,0 +1,38 @@
+@import url("//www.harker.org/uploaded/themes/pcr/harker-2.css");
+
+#primary-content-td {
+    display: block;
+    float: none;
+    width: 860px;
+    padding: 0;
+    margin: 0;
+}
+
+#secondary-content-td {
+    display: none;
+}
+
+#pnlStaticStudent, #pnlStaticGradebook, #pnlStaticGrades, #pnlStaticGradesSave {
+    height: auto !important;
+}
+
+#scrollY {
+    display: none;
+}
+
+/*#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl00_tbGradebookTable td {
+    width: auto !important;
+}
+
+#pnlStaticHeader, #pnlStaticGradebook, #pnlStaticFooter {
+    width: 660px !important;
+}
+
+#pnlStaticGradebook {
+    height: auto !important;
+}
+
+#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl00_tbGradebookTable #scrollX, 
+#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl00_tbGradebookTable #scrollY {
+    display: none;
+}*/

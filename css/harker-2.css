@@ -1,0 +1,767 @@
+/* Reset
+------------------------------------------------------------ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+articlRe, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+/* Defaults
+------------------------------------------------------------ */
+
+body {
+    font-size: 87.5%; /* 14px */
+    line-height: 1.5em; /* 18 - The Magic Number */
+    font-family: Georgia, serif;
+    font-weight: 400;
+    color: #464646;
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
+
+h2,h3,h4,h5,h6 {
+    font-family: "Arial Narrow Bold","Arial", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 18px;
+    color: #444;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.6em; 
+    margin-bottom: 18px;
+    color: #444;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 18px;
+    color: #464646;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    color: #555;
+    font-weight: 500;
+}
+
+h5 {
+    margin-bottom: 18px;
+    color: #464646;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h6 {
+    margin-bottom: 1.5em;
+    color: #444;
+}
+
+p { margin-bottom: 1.5em; }
+
+iframe { margin-bottom: 1.5em; }
+
+a:visited, a:link { color: #e36a22; }
+
+ul, ol, dl { margin-bottom: 1.5em; padding-left: 20px; }
+ul ul, ol ol, ul ol, ol ul, dl dl, ul dl, ol dl, dl ol, dl ul { margin-bottom: 0; font-size: 1em; }
+
+strong, b { font-weight: 700; }
+em, i { font-style: italic;  }
+small, .small, sub, sup { font-size: .7142em; }
+sub { vertical-align: sub; }
+sup { vertical-align: super; }
+del { color: #888; }
+caption { font-size: .8em; color: #666; }
+caption::before { content:"\2013 \2002";}
+blockquote {
+    margin: 1.5em 0 1.5em 28px;
+    padding: 17px 14px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 7px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    font-family: "Arial", sans-serif;
+}
+
+blockquote::before { display: block; height: 0; content: "\201C"; margin-left: -1em; font: italic 54px/1em Georgia, serif; color: #999; }
+
+blockquote p {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 36px; /* 18 * 2 */
+    font-style: italic;
+}
+
+cite {
+    text-align: right;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-weight: 300;
+    display: block;
+    font-style: italic;
+}
+
+cite::before { content:"\2013 \2002"; }
+
+
+/* Hyperlinks
+------------------------------------------------------------ */
+
+a {
+    color: #E36A22;
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+/* Forms
+------------------------------------------------------------ */
+
+#content input[type="submit"] {
+    padding: 0 10px;
+    background: #676767;
+    border: none !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    line-height: 22px;
+    color: white;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+
+/* Body
+------------------------------------------------------------ */
+
+body {
+    background: #EFEFEF url('//www.harker.org/uploaded/themes/corporate/graphics/bg-body.png') repeat-x 0 0;
+}
+
+::-moz-selection {
+    background-color: #E36A22;
+    color: #efefef;
+}
+
+::selection {
+    background-color: #E36A22;
+    color: #efefef;
+}
+
+/* Header
+-------------------------------------------------------------- */
+
+#ctl00_ctl00_baseContent_headerContainer_panel {
+    height: 46px;
+}
+
+#ctl00_ctl00_baseContent_headerContainer_ctl00_markingPeriodSectionSelector,
+#ctl00_ctl00_baseContent_headerContainer_ctl00_studentSelector {
+    text-align: right;
+    width: 940px;
+    padding: 11px 10px 12px;
+    margin: 0 auto;
+}
+
+#Skinnedctl00_ctl00_baseContent_headerContainer_ctl00_ddlStudent {
+    width: 160px !important;
+} 
+
+#masthead {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#masthead > div {
+    height: 97px;
+    margin: 0 10px;
+    background: url('//www.harker.org/uploaded/themes/corporate/graphics/sprite.png') no-repeat 0 -155px;
+}
+
+/* Nav
+-------------------------------------------------------------- */
+
+#nav {
+    width: 960px;
+    height: 35px;
+    margin: 0 auto;
+    line-height: 35px;
+    color: #efefef;
+}
+
+#nav:before, #nav ul:before
+#nav:after, #nav ul:after {
+    content: "";
+    display: table;
+} 
+#nav:after, #nav ul:after {
+    clear: both;
+}
+
+#nav > div {
+    float: left;
+    width: 960px;
+}
+
+#nav ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#nav li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+#nav a {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #efefef;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 1em;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -o-transition: color .5s;
+    -ms-transition: color .5s;
+    transition: color .5s;
+}
+
+#nav a:hover {
+    color: #fff;
+}
+
+#nav a.TPSelectedNode,
+#nav a.active {
+    color: #fff;
+    background: url('http://www.harker.org/uploaded/themes/corporate/graphics/triangle.png') no-repeat center bottom;
+}
+
+#nav .noprint .TPSubMenu {
+    background: url('http://www.harker.org/uploaded/themes/corporate/graphics/triangle.png') no-repeat center bottom;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
+    border-bottom: 1px solid #DDD;
+    clear: both;
+}
+
+#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 a {
+    color: #00422F;
+    line-height: 1.5em;
+    text-transform: none;
+    padding: 0 1em;
+    margin: 0.75em 0 0.75em 1em;
+    border-radius: 2px;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    transition: background 0.5s;
+}
+
+#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 a:hover,
+#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 a.TPSelectedNode {
+    color: #00422F;
+    background: #ddd;
+}
+
+#ctl00_ctl00_baseContent_SiteMapPath1_breadCrumbWrapper,
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl00_welcomeDiv {
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+}
+
+#ctl00_ctl00_baseContent_SiteMapPath1_breadCrumbWrapper {
+    display: none;
+}
+
+#ctl00_ctl00_baseContent_SiteMapPath1_breadCrumbWrapper a.sitemapNode {
+    font-size: 14px;   
+}
+
+/* Content
+-------------------------------------------------------------- */
+
+#content {
+    width: 860px;
+    min-height: 414px;
+    padding: 72px 50px;
+    margin: 0 auto 3em;
+    background: #EFEFEF;
+    box-shadow: 0 4px 5px 0 rgba( 0, 0, 0, .15);
+}
+
+#primary-content-td {
+    width: 540px;
+    padding: 0 0 0 40px;
+}
+
+#secondary-content-td {
+    width: 280px;
+    padding: 0;
+    margin: 0;
+}
+
+#right-content-td {
+    display: none;
+}
+
+/* Drag n' Drop Areas */
+
+#contentTable .RadDockZone {
+    border-color: transparent;
+    padding: 0;
+    border-width: 0 1px;
+}
+
+.RadDock {
+    margin-bottom: 20px;
+}
+
+#contentTable .RadDock_Telerik .rdTop .rdLeft, 
+#contentTable .RadDock_Telerik .rdTop .rdRight, 
+#contentTable .RadDock_Telerik .rdTop .rdCenter, 
+#contentTable .RadDock_Telerik .rdBottom .rdLeft, 
+#contentTable .RadDock_Telerik .rdBottom .rdRight, 
+#contentTable .RadDock_Telerik .rdBottom .rdCenter {
+    background-image: none;
+}
+
+#contentTable .RadDock_Telerik .rdTop .rdLeft, 
+#contentTable .RadDock_Telerik .rdTop .rdRight, 
+#contentTable .RadDock_Telerik .rdTop .rdCenter {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background: #444;
+}
+
+.rdTitleBar span {
+    line-height: 27px;
+}
+
+.RadDock_Telerik .rdCenter .rdCommands a .rdCollapse,
+.RadDock_Telerik .rdCenter .rdCommands a:hover .rdCollapse{
+    background-image: url('//www.harker.org/images/toggle_arrow_down.png');
+    background-position: 0;
+}
+
+.RadDock_Telerik .rdCenter .rdCommands a .rdExpand {
+    background-image: url('//www.harker.org/images/toggle_arrow_left.png');
+    background-position: 0;
+}
+
+#contentTable .RadDock_Telerik .rdMiddle .rdLeft, 
+#contentTable .RadDock_Telerik .rdMiddle .rdRight {
+    background-image: none;
+    background: #fff;
+}
+
+.rdContent {
+    padding: 7px 0;
+}
+
+.rdBottom {
+    display: none;
+}
+
+/* Sidebar Navigation
+-------------------------------------------------------------- */
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper,
+.local-nav {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 1.5em 20px;
+    clear: left;
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 1.9868em;
+    -webkit-box-shadow: 0 12px 12px -5px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 40px rgba(255, 255, 255, 0.051) inset;
+    box-shadow: 0 12px 12px -5px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 40px rgba(255, 255, 255, 0.051) inset;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper ul,
+.local-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper > ul,
+.local-nav > ul {
+    margin-bottom: 0;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li a,
+.local-nav li a {
+    display: block;
+    font-family: Arial, serif;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: 1px dashed #A0A0A0;
+    padding: 12px 10px 12px 0;
+    color: #444;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li a:hover,
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li a.active,
+.local-nav li a:hover,
+.local-nav li a.active {
+    color: #E36A22;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li a:before,
+.local-nav li a:before {
+    content:"\203A \00a0 \00a0";
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper ul > li > a,
+.local-nav ul > li > a {
+    -webkit-transition: padding-left .25s;
+    -moz-transition: padding-left .25s;
+    -o-transition: padding-left .25s;
+    -ms-transition: padding-left .25s;
+    transition: padding-left .25s;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper > ul > li > a:hover,
+.local-nav > ul > li > a:hover {
+    padding-left: 6px;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li li a,
+.local-nav li li a {
+    font-size: 10px;
+    line-height: 1.4em;
+    border-bottom: none;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper > ul > li > ul,
+.local-nav > ul > li > ul {
+    padding-bottom: 10px;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li li,
+.local-nav li li {
+    border-bottom: 1px dashed #a0a0a0;
+}
+
+#ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper > ul > li > ul ul,
+.local-nav > ul > li > ul ul {
+    padding-left: 20px;
+}
+
+/* Login
+-------------------------------------------------------------- */
+
+/* header */
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl00_Login1_lblLogIn {
+    display: block;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 0.75em;
+    font-family: Georgia, sans-serif;
+    font-weight: normal;
+}
+
+.loginDiv {
+    margin-top: 1.5em;
+}
+
+.loginDiv table {
+    width: auto !important;
+    margin-bottom: 1.5em;
+}
+
+.loginDiv td {
+    text-align: left;
+    padding: 0;
+}
+
+.loginDiv label {
+    display: block;
+    width: 100px;
+}
+
+.loginDiv input[type="text"],
+.loginDiv input[type="text"] + .RequiredFieldValidator {
+    display: block;
+    float: left;
+}
+
+.loginDiv input[type="checkbox"],
+.loginDiv input[type="checkbox"] + label {
+    float: left;
+    width: auto;
+}
+
+.loginDiv input[type="checkbox"] {
+    margin-right: 1em;
+}
+
+.rfdSkinnedButton {
+    margin-top: 1.5em;
+}
+
+/* logout link */
+#ctl00_ctl00_baseContent_LogoutControl1_LoginStatus1 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #11212E;
+    color: #FFF;
+    text-align: right;
+    line-height: 2em;
+    padding: 0 1em;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+}
+
+#ctl00_ctl00_baseContent_LogoutControl1_LoginStatus1:hover {
+    color: #e36a22;
+}
+
+/* Login: Forgot Password
+-------------------------------------------------------------- */
+
+/* header */
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl01_Label1 {
+    display: block;
+}
+
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl01_Panel1 table {
+    margin: 1.5em 0;
+}
+
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl01_UserNameLabel,
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl01_lblEmail {
+    display: block;
+    width: 100px;
+}
+
+/* Directory
+-------------------------------------------------------------- */
+
+#content .btnList ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 10px 0 !important;
+    background-color: #c0c0c0;
+}
+
+#content .btnList input[type="submit"] {
+    width: 20px !important;
+    border-width: 0 1px 0 0 !important;
+    border-style: solid !important;
+    border-color: #ccc !important;
+}
+
+#content .btnList input[value="All"] {
+    width: 40px !important;
+    border-width: 0 !important;
+}
+
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl00_DoubleSearchBanner1_sbPanel {
+    padding: 10px !important;
+}
+
+#content .rfdSkinnedButton {
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    background-image: none;
+    background: #676767;
+}
+
+#ctl00_ctl00_baseContent_baseContent_flashTop_ctl00_DoubleSearchBanner1_secondSearch {
+    margin-right: 10px;
+}
+
+/* Calendar (credited to Brian Chan)
+-------------------------------------------------------------- */
+
+.rsTopWrap.rsOverflowExpand
+{
+    width: 100% !important;
+}
+
+.rsSpacerCell, .rsAllDayHeader, .rsVerticalHeaderWrapper
+{
+    width: 54px;
+}
+
+.rsHorizontalHeaderWrapper>div
+{
+    width: 100% !important;
+}
+
+.rsContentScrollArea
+{
+    
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+.RadScheduler .rsMonthView .rsApt.rsAptSimple,
+.RadScheduler .rsWeekView .rsApt.rsAptSimple
+{
+    position: relative !important;
+    left: 0 !important;
+}
+.rsApt.rsAptSimple
+{
+    border: #B9AF8E outset 1px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.RadScheduler .rsWeekView .rsWrap
+{
+    overflow: visible !important;
+}
+
+#content .rsWrap {
+    min-height: 34px;
+    margin-bottom: 10px;
+}
+
+#content .rsApt {
+    margin: 0;
+}
+
+#content .rsWeekView .rsApt {
+    width: auto !important;
+}
+
+#content .rsAptContent {
+    padding: 10px;
+    margin: 0;
+}
+
+#content .rsAptContent {
+    min-height: 0;
+}
+
+/* Home
+-------------------------------------------------------------- */
+
+.news-wrapper, .calendar-preview-wrapper {
+    background: #FFF;
+    padding: 18px 20px;
+    margin: 1.5em 0;
+    border: 1px dashed #CCC;
+}
+
+.news-posted, .calendar-datetime {
+    font-size: 10px;
+}
+
+.news-title, .calendar-title {
+    font-family: "Arial Narrow Bold","Arial", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 18px;
+    color: #464646;
+    font-weight: 400;
+}
+.news-title > a, .calendar-title > a {
+    color: #464646 !important;
+}
+
+#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl01_newsWrapper {
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl04_navWrapper,
+#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl04_radCalendar {
+    width: 860px;
+}
+
+/* Fixes
+-------------------------------------------------------------- */
+
+.DataWebControlStyle,
+.DataWebControlStyle td, .DataWebControlStyle th {
+    border-color: transparent;
+}
+
+.HeaderStyle {
+    background-color: transparent !important;
+    font-weight: bold !important;
+    height: auto; 
+}
+
+#ctl00_ctl00_baseContent_logoLink_navWrapper {
+    display: none;
+}
+
+/* helper classes */
+
+.box {
+    padding: 17px 20px;
+    background-color: white;
+    border: 1px dashed #a6a6a6;
+    margin-bottom: 1.5em;
+}
