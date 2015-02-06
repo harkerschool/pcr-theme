@@ -393,10 +393,17 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
     font-weight: bold;
     color: #fff;
     background: #444;
+    padding: 0 0.5em;
 }
 
 .rdTitleBar span {
     line-height: 27px;
+}
+
+.rdTitleBar a {
+    text-decoration: underline;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .RadDock_Telerik .rdCenter .rdCommands a .rdCollapse,
