@@ -3,7 +3,7 @@
 #primary-content-td {
     display: block;
     float: none;
-    width: 860px;
+    width: 960px;
     padding: 0;
     margin: 0;
 }
@@ -17,7 +17,7 @@
 #pnlStaticGrades, 
 #pnlStaticGradesSave,
 #pnlStaticYHeader {
-    /* height: auto !important; */
+     height: auto !important; 
 }
 
 /*#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl00_tbGradebookTable td {

@@ -181,7 +181,8 @@ a img {
 ------------------------------------------------------------ */
 
 body {
-    background: #EFEFEF url('//www.harker.org/uploaded/themes/corporate/graphics/bg-body.png') repeat-x 0 0;
+    /*background: #EFEFEF url('//www.harker.org/uploaded/themes/corporate/graphics/bg-body.png') repeat-x 0 0;*/
+    background: #efefef;
 }
 
 ::-moz-selection {
@@ -199,12 +200,13 @@ body {
 
 #ctl00_ctl00_baseContent_headerContainer_panel {
     height: 46px;
+    background: #EFEFEF url('//www.harker.org/uploaded/plugins/awesome-bar/img/harker-logo-small-green.png') no-repeat center center;
 }
 
 #ctl00_ctl00_baseContent_headerContainer_ctl00_markingPeriodSectionSelector,
 #ctl00_ctl00_baseContent_headerContainer_ctl00_studentSelector {
     text-align: right;
-    width: 940px;
+    width: 1040px;
     padding: 11px 10px 12px;
     margin: 0 auto;
 }
@@ -216,6 +218,7 @@ body {
 #masthead {
     width: 960px;
     margin: 0 auto;
+    display: none;
 }
 
 #masthead > div {
@@ -228,11 +231,13 @@ body {
 -------------------------------------------------------------- */
 
 #nav {
-    width: 960px;
+    /*width: 960px;*/
+    width: auto;
     height: 35px;
     margin: 0 auto;
     line-height: 35px;
     color: #efefef;
+    background: #053D2F;
 }
 
 #nav:before, #nav ul:before
@@ -245,8 +250,9 @@ body {
 }
 
 #nav > div {
-    float: left;
-    width: 960px;
+    /*float: left;*/
+    width: 1060px;
+    margin: 0 auto;
 }
 
 #nav ul {
@@ -341,11 +347,11 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 -------------------------------------------------------------- */
 
 #content {
-    width: 860px;
+    width: 960px;
     min-height: 414px;
     padding: 72px 50px;
     margin: 0 auto 3em;
-    background: #EFEFEF;
+    background: #fff;
     box-shadow: 0 4px 5px 0 rgba( 0, 0, 0, .15);
 }
 
@@ -429,6 +435,15 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 
 .rdBottom {
     display: none;
+}
+
+/* Assessment Page */
+
+.container-header {
+    color: #FFF;
+    padding: 0.25em 0.5em;
+    font-family: Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px #000;
 }
 
 /* Sidebar Navigation
@@ -743,7 +758,7 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 
 #ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl04_navWrapper,
 #ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl04_radCalendar {
-    width: 860px;
+    width: 960px;
 }
 
 /* Fixes
