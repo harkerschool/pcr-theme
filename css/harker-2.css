@@ -36,6 +36,9 @@ q:before, q:after {
     content: '';
     content: none;
 }
+table, th, td {
+    border-spacing: 0;
+}
 
 
 /* Defaults
@@ -44,7 +47,7 @@ q:before, q:after {
 body {
     font-size: 87.5%; /* 14px */
     line-height: 1.5em; /* 18 - The Magic Number */
-    font-family: Georgia, serif;
+    font-family: Arial, sans-serif;
     font-weight: 400;
     color: #464646;
 }
@@ -102,7 +105,7 @@ p { margin-bottom: 1.5em; }
 
 iframe { margin-bottom: 1.5em; }
 
-a:visited, a:link { color: #e36a22; }
+a:visited, a:link { color: #00809E; }
 
 ul, ol, dl { margin-bottom: 1.5em; padding-left: 20px; }
 ul ul, ol ol, ul ol, ol ul, dl dl, ul dl, ol dl, dl ol, dl ul { margin-bottom: 0; font-size: 1em; }
@@ -152,8 +155,7 @@ cite::before { content:"\2013 \2002"; }
 ------------------------------------------------------------ */
 
 a {
-    color: #E36A22;
-    text-decoration: none;
+    color: #00809E;
 }
 
 a img {
@@ -164,16 +166,18 @@ a img {
 ------------------------------------------------------------ */
 
 #content input[type="submit"] {
-    padding: 0 10px;
-    background: #676767;
+    padding: 0.5em 1em;
+    margin: 1.5em 0;
+    background: #00809E;
     border: none !important;
     font-family: Arial, sans-serif !important;
     font-weight: bold !important;
-    font-size: 12px !important;
-    line-height: 22px;
+    font-size: 14px !important;
+    line-height: 1em;
     color: white;
     cursor: pointer;
     vertical-align: top;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -185,46 +189,44 @@ body {
     background: #efefef;
 }
 
-::-moz-selection {
-    background-color: #E36A22;
-    color: #efefef;
-}
-
-::selection {
-    background-color: #E36A22;
-    color: #efefef;
+#divContentBody {
+    min-width: 1180px; /* 1080 + 50 + 50 (size of content area) */
 }
 
 /* Header
 -------------------------------------------------------------- */
 
 #ctl00_ctl00_baseContent_headerContainer_panel {
-    height: 46px;
-    background: #EFEFEF url('//www.harker.org/uploaded/plugins/awesome-bar/img/harker-logo-small-green.png') no-repeat center center;
+    position: relative;
+    margin: 0 auto;
+    width: 1180px;
 }
 
 #ctl00_ctl00_baseContent_headerContainer_ctl00_markingPeriodSectionSelector,
-#ctl00_ctl00_baseContent_headerContainer_ctl00_studentSelector {
-    text-align: right;
-    width: 1040px;
+#ctl00_ctl00_baseContent_headerContainer_ctl00_studentSelector,
+#ctl00_ctl00_baseContent_headerContainer_ctl01_studentSelector {
+    width: 1160px;
     padding: 11px 10px 12px;
-    margin: 0 auto;
+    position: absolute;
+    top: 41px;
+    text-align: right;
 }
 
-#Skinnedctl00_ctl00_baseContent_headerContainer_ctl00_ddlStudent {
+#Skinnedctl00_ctl00_baseContent_headerContainer_ctl00_ddlStudent,
+#Skinnedctl00_ctl00_baseContent_headerContainer_ctl01_ddlStudent {
     width: 160px !important;
 } 
 
 #masthead {
-    width: 960px;
     margin: 0 auto;
-    display: none;
+    width: 1180px;
+    height: 46px;
+    background: #EFEFEF url('//www.harker.org/uploaded/plugins/awesome-bar/img/harker-logo-small-green.png') no-repeat center center;
 }
 
-#masthead > div {
-    height: 97px;
-    margin: 0 10px;
-    background: url('//www.harker.org/uploaded/themes/corporate/graphics/sprite.png') no-repeat 0 -155px;
+.logoLink ul {
+    padding: 0;
+    margin: 0;
 }
 
 /* Nav
@@ -251,7 +253,7 @@ body {
 
 #nav > div {
     /*float: left;*/
-    width: 1060px;
+    width: 1180px;
     margin: 0 auto;
 }
 
@@ -289,7 +291,7 @@ body {
 }
 
 #nav a.TPSelectedNode,
-#nav a.active {
+#nav a.MenuDefaultSelectedNodeCss {
     color: #fff;
     background: url('http://www.harker.org/uploaded/themes/corporate/graphics/triangle.png') no-repeat center bottom;
 }
@@ -347,7 +349,7 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 -------------------------------------------------------------- */
 
 #content {
-    width: 960px;
+    width: 1080px;
     min-height: 414px;
     padding: 72px 50px;
     margin: 0 auto 3em;
@@ -356,8 +358,8 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 }
 
 #primary-content-td {
-    width: 540px;
-    padding: 0 0 0 40px;
+    width: 750px;
+    padding: 0 0 0 50px;
 }
 
 #secondary-content-td {
@@ -430,7 +432,13 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 }
 
 .rdContent {
-    padding: 7px 0;
+    font-size: 12px;
+    padding: 4px;
+}
+
+.rdContent th, .rdContent td {
+    text-align: left;
+    padding: 2px;
 }
 
 .rdBottom {
@@ -490,7 +498,7 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 #ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li a.active,
 .local-nav li a:hover,
 .local-nav li a.active {
-    color: #E36A22;
+    color: #00809E;
 }
 
 #ctl00_ctl00_baseContent_baseContent_secondary_ctl00_navWrapper li a:before,
@@ -548,17 +556,16 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 }
 
 .loginDiv {
-    margin-top: 1.5em;
+    margin: 1.5em 0;
 }
 
 .loginDiv table {
     width: auto !important;
-    margin-bottom: 1.5em;
 }
 
 .loginDiv td {
     text-align: left;
-    padding: 0;
+    padding: 2px 0;
 }
 
 .loginDiv label {
@@ -586,6 +593,15 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
     margin-top: 1.5em;
 }
 
+/* lost password */
+#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl03_pnlResetPassword {
+    margin: 1.5em 0;
+}
+#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl03_pnlResetPassword td {
+    text-align: left;
+    padding: 2px 0;
+}
+
 /* logout link */
 #ctl00_ctl00_baseContent_LogoutControl1_LoginStatus1 {
     position: fixed;
@@ -601,7 +617,7 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 }
 
 #ctl00_ctl00_baseContent_LogoutControl1_LoginStatus1:hover {
-    color: #e36a22;
+    color: #efefef;
 }
 
 /* Login: Forgot Password
@@ -653,7 +669,7 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
     margin: 0;
     border: none !important;
     background-image: none;
-    background: #676767;
+    background: #00809E;
 }
 
 #ctl00_ctl00_baseContent_baseContent_flashTop_ctl00_DoubleSearchBanner1_secondSearch {
@@ -758,7 +774,7 @@ ul#ctl00_ctl00_baseContent_SingleNavigationMenuWeb_Ul1 {
 
 #ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl04_navWrapper,
 #ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl04_radCalendar {
-    width: 960px;
+    width: 1080px;
 }
 
 /* Fixes
