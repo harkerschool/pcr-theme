@@ -169,6 +169,7 @@ a img {
     padding: 0.5em 1em;
     margin: 1.5em 0;
     background: #00809E;
+    width: auto !important;
     border: none !important;
     font-family: Arial, sans-serif !important;
     font-weight: bold !important;
