@@ -20,6 +20,14 @@
      height: auto !important; 
 }
 
+/* select dropdown */
+#ctl00_ctl00_baseContent_headerContainer_ctl00_markingPeriodSectionSelector {
+    top: auto;
+}
+#ctl00_ctl00_baseContent_headerContainer_ctl00_radcbCourseSection {
+    width: 350px !important;
+}
+
 /*#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl00_tbGradebookTable td {
     width: auto !important;
 }
