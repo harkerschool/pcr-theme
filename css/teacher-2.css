@@ -28,6 +28,11 @@
     width: 350px !important;
 }
 
+#content input[type="submit"],
+.button, .button:visited, .button:link {
+    margin: 0;
+}
+
 /*#ctl00_ctl00_baseContent_baseContent_mainPlaceHolder_ctl00_tbGradebookTable td {
     width: auto !important;
 }
