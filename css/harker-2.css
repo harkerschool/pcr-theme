@@ -208,10 +208,10 @@ body {
 #ctl00_ctl00_baseContent_headerContainer_ctl00_markingPeriodSectionSelector,
 #ctl00_ctl00_baseContent_headerContainer_ctl00_studentSelector,
 #ctl00_ctl00_baseContent_headerContainer_ctl01_studentSelector {
-    width: 1160px;
     padding: 11px 10px 12px;
     position: absolute;
-    top: 41px;
+    top: 43px;
+    right: 0;
     text-align: right;
 }
 
